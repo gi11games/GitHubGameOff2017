@@ -38,56 +38,66 @@ size_flags_vertical = 1
 
 [node name="item_slot" parent="inventory_slots" instance=ExtResource( 3 )]
 
-slot_id = 0
+margin_right = 44.0
+margin_bottom = 38.0
+action_mode = 1
 
 [node name="item_slot1" parent="inventory_slots" instance=ExtResource( 3 )]
 
 margin_left = 40.0
-margin_right = 52.0
+margin_right = 84.0
+margin_bottom = 38.0
 
 [node name="item_slot2" parent="inventory_slots" instance=ExtResource( 3 )]
 
 margin_left = 80.0
-margin_right = 92.0
-slot_id = 2
+margin_right = 124.0
+margin_bottom = 38.0
 
 [node name="item_slot3" parent="inventory_slots" instance=ExtResource( 3 )]
 
 margin_left = 120.0
-margin_right = 132.0
-slot_id = 3
+margin_right = 164.0
+margin_bottom = 38.0
 
 [node name="item_slot4" parent="inventory_slots" instance=ExtResource( 3 )]
 
 margin_left = 160.0
-margin_right = 172.0
-slot_id = 4
+margin_right = 204.0
+margin_bottom = 38.0
 
 [node name="item_slot5" parent="inventory_slots" instance=ExtResource( 3 )]
 
 margin_left = 200.0
-margin_right = 212.0
-slot_id = 5
+margin_right = 244.0
+margin_bottom = 38.0
 
 [node name="item_slot6" parent="inventory_slots" instance=ExtResource( 3 )]
 
 margin_left = 240.0
-margin_right = 252.0
-slot_id = 6
+margin_right = 284.0
+margin_bottom = 38.0
 
 [node name="item_slot7" parent="inventory_slots" instance=ExtResource( 3 )]
 
 margin_left = 280.0
-margin_right = 292.0
-slot_id = 7
+margin_right = 324.0
+margin_bottom = 38.0
 
 [node name="item_select" parent="." instance=ExtResource( 4 )]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+count_num = null
+item_id = null
 
 [node name="Timer" type="Timer" parent="."]
 
 process_mode = 1
 wait_time = 1.0
-one_shot = false
+one_shot = true
 autostart = false
 
 

@@ -9,6 +9,11 @@ onready var invent_sys = get_parent().get_parent()
 onready var timer = get_parent().get_parent().get_node("Timer")
 onready var split_item = false
 
+onready var clicktimer = $Timer
+
+var left_click = false
+var right_click = false
+
 func _ready():
 	item_id = 0
 	count_num = 0
@@ -17,9 +22,9 @@ func _ready():
 	#connect("mouse_entered", self, "_mouse_entered")
 	#connect("mouse_exited", self, "_mouse_exited")
 
-func _physics_process(delta):
+func _process(delta):
 	refresh()
-	
+
 func refresh():
 	set_button_icon(item_data.get_item_image(item_id))
 	if count_num == 0:
@@ -38,9 +43,10 @@ func refresh():
 				count_num -= 1
 				timer.start()
 
-func _input(event):
+func _gui_input(event):
 	if event is InputEventMouseButton:
 		if event.is_action_pressed("left_click"):
+			print(event)
 			if item_id != 0:
 				if item_id == invent_sys.item_select.item_id:
 					if item_data.get_can_store(item_id) :

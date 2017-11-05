@@ -2,12 +2,11 @@ extends Control
 
 onready var ItemDatabase = $ItemDatabase
 onready var item_select = $item_select
-onready var item_list = []
+var item_list = []
 
 func _ready():
 	for i in range(get_node("inventory_slots").get_child_count()):
 		item_list.append(get_node("inventory_slots").get_child(i))
-
 	
 	add_item(1)
 	add_item(2)

@@ -7,11 +7,10 @@ const ITEM_MODEL = 9
 const CAN_STORE = 10
 
 var item_database = [
-	{ITEM_ID : 0, ITEM_NAME : "Empty",  ITEM_IMAGE : "res://assets/sprites/temp/yellow.png", ITEM_MODEL : null, CAN_STORE : true},
-	{ITEM_ID : 1, ITEM_NAME : "Wood",  	ITEM_IMAGE : "res://assets/sprites/temp/green.png", ITEM_MODEL : null, CAN_STORE : true},
-	{ITEM_ID : 2, ITEM_NAME : "Water",  ITEM_IMAGE : "res://assets/sprites/temp/blue.png", ITEM_MODEL : null, CAN_STORE : true},
-	{ITEM_ID : 3, ITEM_NAME : "Fire",  	ITEM_IMAGE : "res://assets/sprites/temp/red.png", ITEM_MODEL : null, CAN_STORE : true},
-	
+	{ITEM_ID : 0, ITEM_NAME : "Empty",  ITEM_IMAGE : "res://assets/sprites/temp/yellow.png", CAN_STORE : true},
+	{ITEM_ID : 1, ITEM_NAME : "Wood",  	ITEM_IMAGE : "res://assets/sprites/temp/green.png", CAN_STORE : true},
+	{ITEM_ID : 2, ITEM_NAME : "Water",  ITEM_IMAGE : "res://assets/sprites/temp/blue.png", CAN_STORE : true},
+	{ITEM_ID : 3, ITEM_NAME : "Fire",  	ITEM_IMAGE : "res://assets/sprites/temp/red.png", CAN_STORE : true},
 ]
 
 func get_item_id(i):

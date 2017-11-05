@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://scripts/item_slot.gd" type="Script" id=1]
-[ext_resource path="res://scenes/inventory/ItemDatabase.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/sprites/temp/grey.png" type="Texture" id=1]
+[ext_resource path="res://scripts/item_slot.gd" type="Script" id=2]
+[ext_resource path="res://scenes/inventory/ItemDatabase.tscn" type="PackedScene" id=3]
 
 [node name="item_slot" type="Button"]
 
@@ -17,15 +18,18 @@ mouse_filter = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 toggle_mode = false
+action_mode = 0
 enabled_focus_mode = 2
 shortcut = null
 group = null
+icon = ExtResource( 1 )
 flat = true
-script = ExtResource( 1 )
+script = ExtResource( 2 )
+_sections_unfolded = [ "Mouse", "Rect" ]
 __meta__ = {
 "_edit_group_": true
 }
-slot_id = 1
+slot_id = null
 item_id = null
 
 [node name="count_text" type="Label" parent="."]
@@ -48,6 +52,13 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "Visibility" ]
 
-[node name="ItemDatabase" parent="." instance=ExtResource( 2 )]
+[node name="ItemDatabase" parent="." instance=ExtResource( 3 )]
+
+[node name="Timer" type="Timer" parent="."]
+
+process_mode = 1
+wait_time = 0.1
+one_shot = true
+autostart = false
 
 
