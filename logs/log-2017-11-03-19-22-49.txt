@@ -1,0 +1,4 @@
+OpenGL ES 3.0 Renderer: Intel(R) Iris(TM) Graphics 540
+GLES3: max ubo light: 409
+GLES3: max ubo reflections: 455, ubo size: 144
+ARVR: Registered interface: Native mobile

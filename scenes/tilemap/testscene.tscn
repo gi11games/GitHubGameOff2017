@@ -1,0 +1,108 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scenes/tilemap/tileset-temp.tres" type="TileSet" id=1]
+[ext_resource path="res://scenes/player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/inventory.tscn" type="PackedScene" id=3]
+
+[node name="testscene" type="Node2D"]
+
+_sections_unfolded = [ "Transform", "Z" ]
+
+[node name="Grass" type="TileMap" parent="."]
+
+mode = 1
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 64, 32 )
+cell_quadrant_size = 3
+cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 1
+cell_y_sort = true
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+tile_data = PoolIntArray( -589815, 0, -524280, 0, -524279, 0, -524278, 0, -458745, 0, -458744, 0, -458743, 0, -458742, 0, -458741, 0, -393210, 0, -393209, 0, -393208, 0, -393207, 0, -393206, 0, -393205, 0, -393204, 0, -327675, 0, -327674, 0, -327673, 0, -327672, 0, -327671, 1, -327670, 1, -327669, 0, -327668, 0, -327667, 0, -262140, 0, -262139, 0, -262138, 0, -262137, 0, -262136, 0, -262135, 0, -262134, 0, -262133, 1, -262132, 0, -262131, 0, -262130, 0, -196605, 0, -196604, 0, -196603, 1, -196602, 0, -196601, 0, -196600, 0, -196599, 0, -196598, 0, -196597, 1, -196596, 0, -196595, 0, -196594, 0, -196593, 0, -131070, 0, -131069, 0, -131068, 0, -131067, 1, -131066, 0, -131065, 0, -131064, 1, -131063, 1, -131062, 1, -131061, 0, -131060, 1, -131059, 1, -131058, 0, -131057, 0, -131056, 0, -65535, 0, -65534, 0, -65533, 0, -65532, 0, -65531, 0, -65530, 1, -65529, 0, -65528, 1, -65527, 1, -65526, 0, -65525, 0, -65524, 1, -65523, 1, -65522, 0, -65521, 0, -65520, 0, -65519, 0, -65517, 0, 2, 0, 3, 0, 4, 1, 5, 0, 6, 0, 7, 0, 8, 0, 9, 1, 10, 1, 11, 0, 12, 0, 13, 0, 14, 0, 15, 0, 16, 0, 17, 0, 18, 0, 19, 0, 20, 0, 65539, 0, 65540, 0, 65541, 1, 65542, 1, 65543, 0, 65544, 0, 65545, 1, 65546, 0, 65547, 1, 65548, 1, 65549, 1, 65550, 1, 65551, 0, 65552, 0, 65553, 0, 65554, 0, 131076, 0, 131077, 0, 131078, 0, 131079, 1, 131080, 0, 131081, 1, 131082, 0, 131083, 0, 131084, 1, 131085, 1, 131086, 1, 131087, 0, 131088, 0, 131089, 0, 196613, 0, 196614, 0, 196615, 0, 196616, 0, 196617, 0, 196618, 1, 196619, 1, 196620, 0, 196621, 0, 196622, 1, 196623, 0, 196624, 0, 262150, 0, 262151, 0, 262152, 0, 262153, 0, 262154, 1, 262155, 1, 262156, 1, 262157, 0, 262158, 0, 327687, 0, 327688, 0, 327689, 0, 327690, 0, 327691, 0, 327692, 0, 327693, 0, 393225, 0, 458762, 0 )
+_sections_unfolded = [ "Cell" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Grass2" type="TileMap" parent="."]
+
+mode = 1
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 64, 32 )
+cell_quadrant_size = 3
+cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 1
+cell_y_sort = true
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+tile_data = PoolIntArray( -65534, 22, -65533, 22, 2, 20, 3, 21, 4, 22, 65538, 20, 65539, 20, 65540, 20, 131075, 20, 131076, 20 )
+_sections_unfolded = [ "Cell" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Water" type="TileMap" parent="."]
+
+mode = 1
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 64, 32 )
+cell_quadrant_size = 3
+cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 1
+cell_y_sort = true
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+tile_data = PoolIntArray( -262127, 34, -196591, 34, -131055, 34, -131054, 31, -65519, 34, -65518, 31, -65517, 31, 17, 34, 18, 31, 19, 31, 20, 31, 65553, 34, 65554, 31, 65555, 31, 65556, 31, 131089, 30, 131090, 8, 131091, 8, 131092, 8 )
+_sections_unfolded = [ "Cell" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Trees" type="TileMap" parent="."]
+
+z_as_relative = false
+mode = 1
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 64, 32 )
+cell_quadrant_size = 3
+cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 1
+cell_y_sort = true
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+tile_data = PoolIntArray( -393208, 10, -327674, 10, -327668, 15, -262136, 10, -262131, 15, -196595, 15, -65534, 11, -65530, 10, 131085, 10, 131086, 10, 196615, 10, 262155, 10 )
+_sections_unfolded = [ "Cell", "Collision", "Z" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="player" parent="Trees" instance=ExtResource( 2 )]
+
+position = Vector2( 320, 192 )
+z_as_relative = false
+_sections_unfolded = [ "Transform", "Z" ]
+
+[node name="inventory" parent="." instance=ExtResource( 3 )]
+
+
